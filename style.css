@@ -4,3 +4,11 @@ li {
     cursor: pointer;
 }
 
+body {
+    padding: 30px;
+}
+
+title {
+    font-size: 12px;
+    padding: 20px;
+}
