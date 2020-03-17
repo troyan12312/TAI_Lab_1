@@ -1,68 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <title>Dawid Trojanowski</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Unikalny tytul</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="contact">
+    <div class="navbar">
 
-<ul class="nav">
-    <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="quiz.html">Quiz</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="contact.html">Kontakt</a>
-    </li>
-</ul>
+    </div>
+    Imie:<br>
+    <input type="text" name="imie" value="" placeholder="Podaj imię"> <br>
+    Nazwisko:<br>
+    <input type="text" name="nazwisko" value="" placeholder="Podaj nazwisko"> <br>
+    E-mail:<br>
+    <input type="email" name="email" value="" placeholder="Podaj email"><br>
+    Plec:<br>
+    <input type="checkbox" name="kobieta" value="" checked>Kobieta
+    <input type="checkbox" name="mezczyzna" value="" checked>Mezczyzna<br>
+    Opis:<br>
+    <textarea rows="4" cols="50">
+Przykładowy tekst
+</textarea> <br>
+    Wiek:<br>
+    <select>
+        <option value="wartość1">0-18</option>
+        <option value="wartość2">18-25</option>
+        <option value="wartość3">25-45</option>
+        <option value="wartość4">45+</option>
+    </select><br>
+    Stan cywilny:<br>
+    <select>
+        <option value="wartość1">Panna</option>
+        <option value="wartość2">Kawaler</option>
+    </select><br>
+    <button type="reset" name="wyczysc">Wyczysc</button>
+    <button type="submit" name="wyslij">Wyslij</button>
+</div>
 
-<form>
-    <div class="title">
-        Uzupełnij formularz:
-    </div>
-    <div class="form-group">
-        <label for="Imię">Imię:</label>
-        <input type="text" class="form-control" placeholder="Podaj imię">
-    </div>
-    <div class="form-group">
-        <label for="Nazwisko">Nazwisko:</label>
-        <input type="text" class="form-control" placeholder="Podaj nazwisko">
-    </div>
-    <div class="form-group">
-        <label for="Email">E-mail</label>
-        <input type="email" class="form-control" placeholder="Podaj email">
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" name="radio" type="radio" value="m" checked>
-        <label class="form-check-label" for="Mężczyzna">
-            Mężczyzna
-        </label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" name="radio" type="radio" value="k">
-        <label class="form-check-label" for="Kobieta">
-            Kobieta
-        </label>
-    </div>
-    <div class="form-check">
-        <input type="number" name="nazwa" value="wartość" checked>
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlSelect1">Stan cywilny:</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-            <option>Panna/Kawaler</option>
-            <option>Zamężny/Ożeniona</option>
-        </select>
-    </div>
-    <button type="reset" class="btn btn-primary">Wyczyść</button>
-    <button type="submit" class="btn btn-primary">Wyślij</button>
-</form>
+<script src="navbar.js"></script>
 
+</body>
+</html>
 </body>
 </html>
