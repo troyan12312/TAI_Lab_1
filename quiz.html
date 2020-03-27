@@ -4,17 +4,64 @@
     <meta charset="UTF-8">
     <title>Unikalny tytul</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
-
+<title>Quiz</title>
 <div class="navbar">
 
 </div>
 
-Quiz
+<div class="container list">
+    Question: <span id = "question-number"></span><h4 class="question"></h4>
 
-<script src="navbar.js"></script>
+    Answers:
+    <ul class="list-group">
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+    </ul>
+
+    <div class="buttons">
+        <button class="btn btn-danger previous">Previous</button>
+        <button class="btn btn-success next">Next</button>
+    </div>
+
+    <h4>Your score: <span class="score">0</span>/20 points.</h4>
+</div>
+<div class="container results" style="display: none">
+    <div class="btn-group-custom">
+        <button class="btn btn-success btn-custom restart">Retake quiz</button>
+    </div>
+    <div class="score">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Point/20</th>
+                <th>Average</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Your score</th>
+                <td class="userScorePoint"></td>
+                <td class="average"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<footer class="footer">
+    Copyrights &copy; Dawid Trojanowski | 2020
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/quiz.js"></script>
 
 </body>
 </html>
